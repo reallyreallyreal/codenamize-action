@@ -1,6 +1,9 @@
 name: 'codenamize-action'
 author: 'ReallyReallyReal'
 description: 'As codenamize-js, it will "generate consistent easier-to-remember codenames from strings, numbers, or other seed inputs".'
+branding:
+  icon: 'bookmark'
+  color: 'gray-dark'
 inputs:
   seed:
     description: 'The seed from which the codename will be generated.'
