@@ -1,6 +1,6 @@
-name: 'Codenamize'
+name: 'codenamize-action'
 author: 'ReallyReallyReal'
-description: 'A wrapper action around codenamize-js, which will "generate consistent easier-to-remember codenames from strings, numbers, or other seed inputs".'
+description: 'As codenamize-js, it will "generate consistent easier-to-remember codenames from strings, numbers, or other seed inputs".'
 inputs:
   seed:
     description: 'The seed from which the codename will be generated.'
