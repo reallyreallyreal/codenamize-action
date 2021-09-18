@@ -19,7 +19,8 @@
 		"lint": "eslint **/*.ts --cache",
 		"prepare": "yarn build",
 		"build": "tsc --noEmit && ncc build src/index.ts -o dist --source-map --license licenses.txt",
-		"test": "tsc --noEmit && jest --watch-all"
+		"test": "tsc --noEmit && jest",
+		"test:watch": "yarn test --watch-all"
 	},
   "keywords": [
     "actions",
