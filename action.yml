@@ -1,0 +1,23 @@
+name: 'Codenamize'
+author: 'ReallyReallyReal'
+description: 'A wrapper action around codenamize-js, which will "generate consistent easier-to-remember codenames from strings, numbers, or other seed inputs".'
+inputs:
+  seed:
+    description: 'The seed from which the codename will be generated.'
+    required: true
+  adjective-count:
+    description: 'Classic mode uses adjective-count to determine the composition of the codename output, which will be made up of the specified number of adjectives, followed by a noun. Note that prepending more adjectives retains the existing codename words.'
+  particles:
+    description: 'Instead of adjective-count, the particles argument can alternatively be used to specify a more precise composition for the produced codename. The argument is an array of word categories which will be appended together to produce the output codename.'
+  max-item-chars:
+    description: 'Specifies the maximum length of each codename word.'
+  capitalize:
+    description: 'Determines whether each word in the codename will be capitalized.'
+  separator:
+    description: 'Specifies the character(s) used to combine the parts of the codename.'
+outputs:
+  codename:
+    description: 'The generated codename'
+runs:
+  using: 'node14'
+  main: 'dist/index.js'
