@@ -2217,15 +2217,16 @@ function run() {
             capitalize: getInputAsBoolean(input_enum_1.Input.Capitalize),
             separator: core.getInput(input_enum_1.Input.Separator) || undefined,
         };
-        core.info(`Running codenamize with options: ${JSON.stringify(options, null, 2)}`);
+        core.debug(`Running codenamize with options: ${JSON.stringify(options, null, 2)}`);
         const codename = (0, codenamize_1.default)(options);
-        core.debug(`Codename generated: ${codename}`);
+        core.info(`Codename generated: ${codename}`);
         core.setOutput(output_enum_1.Output.Codename, codename);
     }
     catch (error) {
         core.setFailed(isError(error) ? error.message : `Unknown error: ${error}`);
     }
 }
+run();
 exports.default = run;
 
 
