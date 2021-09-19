@@ -35,6 +35,6 @@ Note: all option values are string.
     capitalize: true
 ```
 
-## license
+## License
 
 [MIT](/LICENSE) &copy; 2021 ReallyReallyReal
