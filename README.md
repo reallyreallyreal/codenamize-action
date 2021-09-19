@@ -25,7 +25,7 @@ Note: all option values are string.
 
 ```yml
 - name: Generate codename
-  uses: reallyreallyreal/codenamize-action@master
+  uses: reallyreallyreal/codenamize-action@main
   with:
     seed: 1
     particles: |
@@ -35,6 +35,6 @@ Note: all option values are string.
     capitalize: true
 ```
 
-## license
+## License
 
 [MIT](/LICENSE) &copy; 2021 ReallyReallyReal
