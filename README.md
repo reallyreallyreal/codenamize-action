@@ -25,7 +25,7 @@ Note: all option values are string.
 
 ```yml
 - name: Generate codename
-  uses: reallyreallyreal/codenamize-action@master
+  uses: reallyreallyreal/codenamize-action@main
   with:
     seed: 1
     particles: |
