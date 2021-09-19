@@ -60,7 +60,7 @@ function run(): void {
             separator: core.getInput(Input.Separator) || undefined,
         }
 
-        core.info(
+        core.debug(
             `Running codenamize with options: ${JSON.stringify(
                 options,
                 null,
@@ -70,7 +70,7 @@ function run(): void {
 
         const codename = codenamize(options)
 
-        core.debug(`Codename generated: ${codename}`)
+        core.info(`Codename generated: ${codename}`)
 
         core.setOutput(Output.Codename, codename)
     } catch (error: unknown) {
