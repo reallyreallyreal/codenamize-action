@@ -80,4 +80,6 @@ function run(): void {
     }
 }
 
+run()
+
 export default run
