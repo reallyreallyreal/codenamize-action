@@ -7,9 +7,21 @@ on:
       - develop
 
 jobs:
+  Jest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
+
   Test:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - run: yarn install --frozen-lockfile
-    - run: yarn test
+      - uses: actions/checkout@v2
+      - id: codenamize
+        uses: ./
+        with:
+          seed: 1
+      - runs: echo ${{ steps.codenamize.outputs.codename }}
