@@ -1,6 +1,6 @@
 {
 	"name": "codenamize-action",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "An action that wraps codenamize-js to \"generate consistent easier-to-remember codenames from strings, numbers, or other seed inputs\".",
 	"license": "MIT",
 	"repository": {
