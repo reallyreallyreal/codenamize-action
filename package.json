@@ -28,7 +28,7 @@
     "codenamize-action"
   ],
 	"dependencies": {
-		"@actions/core": "^1.5.0",
+		"@actions/core": "^1.6.0",
 		"@codenamize/codenamize": "^1.1.1"
 	},
 	"devDependencies": {
